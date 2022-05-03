@@ -27,3 +27,28 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 }
+
+function game() {
+    let userInput, compInput;
+    let userScore = 0, compScore = 0, resultPrompt = "";
+    for (let i = 0; i < 5; i++) {
+        userInput = prompt("Enter your choice: ");
+        compInput = computerPlay();
+        resultPrompt = playRound(userInput, compInput);
+        console.log(resultPrompt);
+        if (resultPrompt.search("win") >= 0) {
+            userScore += 1;
+        } else if (resultPrompt.search("lose") >= 0) {
+            compScore += 1;
+        }
+    }
+
+    console.log(`User Score: ${userScore}\nComp Score: ${compScore}`); 
+    if (userScore > compScore) {
+        alert("Congratulations! You win the game!");
+    } else if (userScore < compScore) {
+        alert("Awwww! Better luck next time.");
+    } else {
+        alert("It's a tie!");
+    }
+}
