@@ -4,36 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Odin RPS</title>
-
-    <style>
-        body {
-            margin: 0px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        #header {
-            display: inherit;
-        }
-
-        #logo {
-            display: inherit;
-        }
-    </style>
 </head>
 <body>
     <div id="header">
-        <div id="logo">Insert Logo Here</div>
-        <h1>Odin Rock-Paper-Scissors</h1>
+        <div id="logo">Insert logo here</div>
+        <h1>Odin Project 3</h1>
     </div>
     <div id="content">
-        <p>Instructions:</p>
+        <h2>Welcome to the Rock-Paper-Scissors game!</h2>
+        <p>Instructions and Reminders:</p>
         <ol>
-            <li>Access the Chrome DevTools for this page.</li>
-            <li>Go to the Console tab.</li>
-            <li>Enter <pre><code>game();</code></pre> in the console.</li>
-            <li>Repeat Step 3 if you want to.</li>
+            <li>Go to the Console tab. Press <span class="commands">Command+Option+J</span> (Mac) or <span class="commands">Control+Shift+J</span> (Windows, Linux, ChromeOS).</li>
+            <li>Enter <code id="game-code">game();</code> in the console. Alert and prompt pop-up windows will appear.</li>
+            <li>Keep in mind that the only options are rock, paper and scissors. Make sure you spell these correctly!</li>
+            <li>There are 5 rounds in each game and the score reverts to 0 once a game ends.</li>
+            <li>Repeat Step 2 if you want to continue playing after the game ends. Enjoy!</li>
         </ol>
     </div>
     <div id="footer">Copyright © The Odin Project 2021</div>
