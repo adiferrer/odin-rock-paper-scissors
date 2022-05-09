@@ -1,0 +1,7 @@
+git branch <branch_name>
+git checkout <branch_name>
+OR
+git checkout -b <branch_name>
+
+git merge <branch_name> 
+git branch -d <branch_name> or git branch -D <branch_name> 
