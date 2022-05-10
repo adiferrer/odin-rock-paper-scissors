@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e74f9c5c73.js" crossorigin="anonymous"></script>
     <title>Odin RPS</title>
 </head>
 <body>
@@ -17,26 +18,32 @@
             <h2>Welcome to the Rock-Paper-Scissors game!</h2>
             <p>Instructions and Reminders:</p>
             <ol>
-                <li>Press any button of your choice below to start playing.</li>
-                <li>Just keep on pressing any button of your choice to keep on playing.</li>
-                <li>Scores will be reverted back to 0 once you refresh the page.</li>
+                <li>Click on any button of your choice below to start playing.</li>
+                <li>Just keep on clicking any button of your choice to keep on playing.</li>
                 <li>The winner will be announced once a player reaches 5 points.</li>
                 <li>Refresh the page to play another game.</li>
+                <li>Scores will be reverted back to 0 once you refresh the page.</li>
             </ol>
         </div>
         
         <div id="buttons">
-            <button type="submit" class="button" id="rock">Rock</button>
-            <button type="submit" class="button" id="paper">Paper</button>
-            <button type="submit" class="button" id="scissors">Scissors</button>
+            <button type="submit" class="button" id="rock">
+                Rock <i class="fa-regular fa-hand-back-fist"></i>
+            </button>
+            <button type="submit" class="button" id="paper">
+                Paper <i class="fa-regular fa-hand"></i>
+            </button>
+            <button type="submit" class="button" id="scissors">
+                Scissors <i class="fa-regular fa-hand-scissors"></i>
+            </button>
         </div>
 
         <div id="results">
             <div id="scores">
-                <span id="user-score"></span>
-                <span id="comp-score"></span>
+                <span id="user-score">User: 0</span>
+                <span id="comp-score">Computer: 0</span>
             </div>
-            <p id="remarks"></p>
+            <p id="remarks">CLICK ON YOUR FIRST CHOICE TO START</p>
         </div>
     </div>
     <div id="footer">Copyright © The Odin Project 2021</div>

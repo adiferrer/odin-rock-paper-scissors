@@ -64,11 +64,29 @@ ol {
     border-radius: 5px;
 } */
 
+#buttons {
+    display: inherit;
+    gap: 10px;
+}
+
+i {
+    width: 20px;
+    height: auto;
+}
+
+.button {
+    background-color: #e3b260;
+    padding: 10px;
+    border: 2px solid #e4e7eb;
+    border-radius: 12px;
+}
+
 #scores {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
+
 #footer {
     background-color: #e4e7eb;
     width: -webkit-fill-available;
