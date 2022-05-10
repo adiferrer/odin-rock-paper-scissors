@@ -13,15 +13,31 @@
         <h1>Odin Project 3</h1>
     </div>
     <div id="content">
-        <h2>Welcome to the Rock-Paper-Scissors game!</h2>
-        <p>Instructions and Reminders:</p>
-        <ol>
-            <li>Go to the Console tab. Press <span class="commands">Command+Option+J</span> (Mac) or <span class="commands">Control+Shift+J</span> (Windows, Linux, ChromeOS).</li>
-            <li>Enter <code id="game-code">game();</code> in the console. Alert and prompt pop-up windows will appear.</li>
-            <li>Keep in mind that the only options are rock, paper and scissors. Make sure you spell these correctly!</li>
-            <li>There are 5 rounds in each game and the score reverts to 0 once a game ends.</li>
-            <li>Repeat Step 2 if you want to continue playing after the game ends. Enjoy!</li>
-        </ol>
+        <div id="instructions">
+            <h2>Welcome to the Rock-Paper-Scissors game!</h2>
+            <p>Instructions and Reminders:</p>
+            <ol>
+                <li>Press any button of your choice below to start playing.</li>
+                <li>Just keep on pressing any button of your choice to keep on playing.</li>
+                <li>Scores will be reverted back to 0 once you refresh the page.</li>
+                <li>The winner will be announced once a player reaches 5 points.</li>
+                <li>Refresh the page to play another game.</li>
+            </ol>
+        </div>
+        
+        <div id="buttons">
+            <button type="submit" class="button" id="rock">Rock</button>
+            <button type="submit" class="button" id="paper">Paper</button>
+            <button type="submit" class="button" id="scissors">Scissors</button>
+        </div>
+
+        <div id="results">
+            <div id="scores">
+                <span id="user-score"></span>
+                <span id="comp-score"></span>
+            </div>
+            <p id="remarks"></p>
+        </div>
     </div>
     <div id="footer">Copyright © The Odin Project 2021</div>
 
